@@ -81,6 +81,10 @@
 import React, { useState, useEffect }from 'react';
 // import Resume from '/Mihir_s_Resume.pdf';
 
+import { Fira_Code } from 'next/font/google';
+const inter = Fira_Code({ subsets: ['latin'] })
+
+
 export default function Home() {
   const [command, setCommand] = useState('');
   const [commandHistory, setCommandHistory] = useState([]);
@@ -121,9 +125,10 @@ export default function Home() {
   };
 
   return (
-    <div  className="bg-[#30475E] min-h-screen w-full h-full border-2 border-solid border-[#ff414d] pt-1">
+    <body>
+    <div  className="bg-[#30475E] min-h-screen w-full h-full border-2 border-solid border-orange-500 pt-2">
       <header className="flex flex-col">
-        <h1 className="font-fira pl-5"><span className='text-[#ff414d]'>visitor@mihirseth:$ ~</span> welcome</h1>
+        <h1 className="font-fira pl-5"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> welcome</h1>
         <pre className="flex pl-5">  
 
           <code>{`
@@ -148,13 +153,14 @@ export default function Home() {
         />
       </div>
     </div>
+    </body>
   );
 }
 
 function Terminal({ onChange, onKeyDown, value }) {
   return (
     <div className="flex flex-wrap">
-      <h1 className="font-fira text-[#ff414d]">visitor@mihirseth:$ ~</h1>
+      <h1 className="font-fira text-orange-500 ">visitor@mihirseth:$ ~</h1>
       <input
         type="text"
         onChange={onChange}
@@ -183,7 +189,7 @@ function Education() {
   return (
     <div>
       {/* <h1>visitor@mihirseth:$ ~  education</h1> */}
-      <p className="font-fira"><span className='text-[#ff414d]'>visitor@mihirseth:$ ~</span>education</p>
+      <p className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span>education</p>
 
       {/* <div className="flex flex-wrap"> */}
        <p>I did my high school at Pathways School Gurgaon in India, through the IB curriculum, and am currently studying Computer Engineering at the University of Waterloo</p>
@@ -200,7 +206,7 @@ function Education() {
 function Help() {
   return (
     <div>
-      <h1 className="font-fira"><span className='text-[#ff414d]'>visitor@mihirseth:$ ~</span> help</h1>
+      <h1 className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> help</h1>
       {/* <div className="flex flex-wrap"> */}
         <div className="flex justify-between">
           <p className="font-fira">about</p>
@@ -249,7 +255,7 @@ function Resume() {
 
   return (
     <div>
-      <p className="font-fira"><span className='text-[#ff414d]'>visitor@mihirseth:$ ~</span> my resume is being opened in a new tab</p>
+      <p className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> my resume is being opened in a new tab</p>
       {/* You can include other content related to the resume if needed */}
     </div>
   );
@@ -259,7 +265,7 @@ function Resume() {
 
 function DefaultOutput() {
   return <div>
-    <p1 className="font-fira"><span className='text-[#ff414d]'>visitor@mihirseth:$ ~</span> Command not recognized</p1>
+    <p1 className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> Command not recognized</p1>
     </div>;
 }
 
@@ -267,7 +273,7 @@ function DefaultOutput() {
 function About(){
   return(
     <div>
-      <h1 className="font-fira"><span className='text-[#ff414d]'>visitor@mihirseth:$ ~</span> about</h1>
+      <h1 className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> about</h1>
 
       <p className="font-fira">
       My name is Mihir. I am 18 and an aspiring Computer Engineer.
@@ -289,7 +295,7 @@ function About(){
 function Skills(){
   return(
     <div>
-      <h1 className="font-fira"><span className='text-[#ff414d]'>visitor@mihirseth:$ ~</span> skills</h1>
+      <h1 className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> skills</h1>
 
       <p className="font-fira">
         <span className='font-bold'>languages:</span> JavaScript, Python, HTML/CSS, Dart, C/C++, Java
@@ -303,7 +309,7 @@ function Skills(){
 function Projects(){
   return(
     <div>
-      <h1 className="font-fira"><span className='text-[#ff414d]'>visitor@mihirseth:$ ~</span> projects</h1>
+      <h1 className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> projects</h1>
 
       <p className="font-fira">
         <br/><span className='font-bold'>Sign Language Detection - PyTorch, Python, OpenCV, MediaPipe</span>
@@ -335,7 +341,7 @@ function Projects(){
 function Experience(){
   return(
     <div>
-      <h1 className="font-fira"><span className='text-[#ff414d]'>visitor@mihirseth:$ ~</span> experience</h1>
+      <h1 className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> experience</h1>
       <p className="font-fira">
         <br/><span className='font-bold'>Software Internship - DotPe</span>
         {/* <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32 Libraries: NumPy, pytesseract, OpenCV */}

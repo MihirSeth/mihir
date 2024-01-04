@@ -16,6 +16,10 @@ module.exports = {
       },
       fontFamily: {
         fira: ["Fira Code", "sans-serif"],
+        plex: ["IBM Plex Mono", "sans-serif"],
+        "fira": "var(--body-font)",
+
+
       },
     },
   },
