@@ -100,6 +100,10 @@ export default function Home() {
       setCommand('');
     }
   };
+  // const clear = () => {
+  //   setCommandHistory([]); // Clear the command history
+  //   setCommand('');
+  //   };
 
   const processCommand = (command) => {
     switch (command) {
@@ -118,7 +122,13 @@ export default function Home() {
       case 'projects':
         return <Projects />
       case 'experience':
-          return <Experience />
+        return <Experience />
+      case 'contact':
+        return <Contact />
+      // case 'clear':
+          // clear();
+          // return null;
+          // return <Clear commandHistory = {setCommandHistory} commands = {commandHistory}/>
       default:
         return <DefaultOutput />;
     }
@@ -142,7 +152,7 @@ export default function Home() {
         </pre>
         <h1 className="font-fira pl-5">Type 'help' to see a list of all the possible commands</h1>
       </header>
-      <div className="flex flex-col justify-center pl-5 pt-5 w-1/3">
+      <div className="flex flex-col justify-center pl-5 pt-5 md:w-1/3 sm:w-2/3">
         {/* Render command history */}
         <CommandHistory history={commandHistory} />
         {/* Render Terminal component */}
@@ -232,11 +242,14 @@ function Help() {
           <p className="font-fira">experience</p>
           <p className="font-fira">my experience</p>
         </div>
+        <div className="flex justify-between">
+          <p className="font-fira">contact</p>
+          <p className="font-fira">how to contact me</p>
+        </div>
 
       {/* </div> */}
 
     </div>
- 
 
   )
 }
@@ -363,3 +376,38 @@ function Experience(){
     </div>
   )
 }
+
+
+
+function Contact() {
+  return (
+    <div>
+      <h1 className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> contact</h1>
+      {/* <div className="flex flex-wrap"> */}
+        <div className="flex justify-between">
+          <p className="font-fira">github</p>
+          <a href="https://github.com/MihirSeth" target='_blank' className="font-fira text-orange-500 underline">mihirseth</a>
+        </div>
+        <div className="flex justify-between">
+          <p className="font-fira">email</p>
+          <a href="mailto:mihirseth2005@gmail.com" target='_blank' className="font-fira text-orange-500 underline">mihirseth2005@gmail.com</a>
+        </div>
+        <div className="flex justify-between">
+          <p className="font-fira">linkedin</p>
+          <a href="https://linkedin.com/in/mihirseth" target='_blank' className="font-fira text-orange-500 underline">mihirseth</a>
+        </div>
+        {/* <div className="flex justify-between">
+          <p className="font-fira">resume</p>
+          <p className="font-fira">my resume</p>
+        </div> */}
+
+    </div>
+
+  )
+}
+
+
+// function Clear(setCommandHistory, commands){
+//   setCommandHistory([])
+//   console.log(commands)
+// }
