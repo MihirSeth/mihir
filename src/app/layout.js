@@ -1,4 +1,4 @@
-import { Fira_Code, IBM_Plex_Mono } from 'next/font/google'
+import { Fira_Code } from 'next/font/google'
 import './globals.css'
 
 const fira = Fira_Code({
