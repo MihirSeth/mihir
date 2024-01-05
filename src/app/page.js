@@ -81,8 +81,8 @@
 import React, { useState, useEffect }from 'react';
 // import Resume from '/Mihir_s_Resume.pdf';
 
-import { Fira_Code } from 'next/font/google';
-const inter = Fira_Code({ subsets: ['latin'] })
+// import { Fira_Code } from 'next/font/google';
+// const inter = Fira_Code({ subsets: ['latin'] })
 
 
 export default function Home() {
@@ -100,17 +100,17 @@ export default function Home() {
       setCommand('');
     }
   };
-  // const clear = () => {
-  //   setCommandHistory([]); // Clear the command history
-  //   setCommand('');
-  //   };
+  const clear = () => {
+    setCommandHistory([]); // Clear the command history
+    setCommand('');
+    // console.log('hello');
+    // window.location.reload(false);
+  };
 
   const processCommand = (command) => {
     switch (command) {
       case 'help':
         return <Help />;
-      case 'clear':
-        return null;
       case 'resume':
         return <Resume />;
       case 'education':
@@ -124,10 +124,16 @@ export default function Home() {
       case 'experience':
         return <Experience />
       case 'contact':
+        console.log('hello');
+
         return <Contact />
-      // case 'clear':
-          // clear();
-          // return null;
+      case 'clear':
+        //  console.log('hello');
+        //  document.location.reload();
+        
+        // window.location.reload();
+          clear();
+          return null;
           // return <Clear commandHistory = {setCommandHistory} commands = {commandHistory}/>
       default:
         return <DefaultOutput />;
@@ -150,7 +156,7 @@ export default function Home() {
 ╚═╝     ╚═╝╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝    ╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝                                                                     
           `} </code>
         </pre>
-        <h1 className="font-fira pl-5">Type 'help' to see a list of all the possible commands</h1>
+        <h1 className="font-fira pl-5">Type &apos;help&apos; to see a list of all the possible commands</h1>
       </header>
       <div className="flex flex-col justify-center pl-5 pt-5 md:w-1/3 sm:w-2/3">
         {/* Render command history */}
@@ -176,7 +182,7 @@ function Terminal({ onChange, onKeyDown, value }) {
         onChange={onChange}
         onKeyDown={onKeyDown}
         value={value}
-        className="bg-[#30475E] focus:outline-none pl-2"
+        className="bg-[#30475E] focus:outline-none md:pl-2 sm:pl-1"
       />
     </div>
   );
@@ -246,6 +252,10 @@ function Help() {
           <p className="font-fira">contact</p>
           <p className="font-fira">how to contact me</p>
         </div>
+        <div className="flex justify-between">
+          <p className="font-fira">clear</p>
+          <p className="font-fira">clear the whole page</p>
+        </div>
 
       {/* </div> */}
 
@@ -298,7 +308,7 @@ function About(){
       </p>
       <p className="font-fira pt-2">
 
-        When not coding, you’ll catch me either reading a book, watching a Sport, sleeping or crying over University Work. I occasionally also drift into endless thought while staring at the night sky.
+        When not coding, you&apos;ll catch me either reading a book, watching a Sport, sleeping or crying over University Work. I occasionally also drift into endless thought while staring at the night sky.
       </p>
 
     </div>
@@ -408,6 +418,13 @@ function Contact() {
 
 
 // function Clear(setCommandHistory, commands){
-//   setCommandHistory([])
-//   console.log(commands)
-// }
+//   window.location.reload();
+
+//   // You can also use other ways to navigate to a different page or handle the 'contact' logic
+//   // For example, you might want to use React Router or update the state to render a different component
+//   return (
+//     <div>
+//       {/* Content for the Contact page */}
+//     </div>
+//   );
+// };
