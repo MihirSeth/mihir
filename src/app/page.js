@@ -80,6 +80,7 @@
 import { createServerContext } from 'react';
 // 
 import React, { useState, useEffect } from 'react';
+// import Image from 'next/image'
 // import Resume from '/Mihir_s_Resume.pdf';
 
 // import { Fira_Code } from 'next/font/google';
@@ -125,7 +126,7 @@ export default function Home() {
       case 'experience':
         return <Experience />
       case 'contact':
-        console.log('hello');
+        // console.log('hello');
 
         return <Contact />
       case 'clear':
@@ -146,7 +147,7 @@ export default function Home() {
     <div  className="bg-[#30475E] min-h-screen w-full h-full border-2 border-solid border-orange-500 pt-2">
       <header className="flex flex-col">
         <h1 className="font-fira pl-5"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> welcome</h1>
-        <pre className="flex pl-5">  
+        <pre className="flex overflow-hidden pl-5" >  
 
           <code>{`
 ███╗   ███╗██╗██╗  ██╗██╗██████╗     ███████╗███████╗████████╗██╗  ██╗
@@ -157,6 +158,8 @@ export default function Home() {
 ╚═╝     ╚═╝╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝    ╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝                                                                     
           `} </code>
         </pre>
+
+        {/* <Image fill={true} src={'/bob.svg'} /> */}
         <h1 className="font-fira pl-5">Type &apos;help&apos; to see a list of all the possible commands</h1>
       </header>
       <div className="flex flex-col justify-center pl-5 pt-5 md:w-1/3 sm:w-2/3">
@@ -177,14 +180,14 @@ export default function Home() {
 function Terminal({ onChange, onKeyDown, value }) {
   return (
     <div className="flex flex-wrap">
-      <h1 className="font-fira text-orange-500 ">visitor@mihirseth:$ ~</h1>
-      <input
+      <h1 className="font-fira text-orange-500 ">visitor@mihirseth:$ ~ <input
         type="text"
         onChange={onChange}
         onKeyDown={onKeyDown}
         value={value}
-        className="bg-[#30475E] focus:outline-none md:pl-2 sm:pl-1"
-      />
+        className="bg-[#30475E] text-white focus:outline-none"
+      /></h1>
+  
     </div>
   );
 }
