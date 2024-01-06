@@ -206,7 +206,7 @@ function Education() {
   return (
     <div>
       {/* <h1>visitor@mihirseth:$ ~  education</h1> */}
-      <p className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span>education</p>
+      <p className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> education</p>
 
       {/* <div className="flex flex-wrap"> */}
        <p>I did my high school at Pathways School Gurgaon in India, through the IB curriculum, and am currently studying Computer Engineering at the University of Waterloo</p>
