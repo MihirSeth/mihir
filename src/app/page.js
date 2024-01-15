@@ -272,7 +272,7 @@ function Resume() {
 
   useEffect(() => {
     const openResumeInNewTab = () => {
-      window.open('/Mihir_s_Resume.pdf', '_blank');
+      window.open('https://drive.google.com/file/d/1KQ-uvn2_sLImzli1zIjhSl_DUEJu732y/view?usp=sharing', '_blank');
     };
 
     openResumeInNewTab(); // Open the PDF file when the component mounts
