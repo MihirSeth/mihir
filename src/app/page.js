@@ -79,7 +79,7 @@
 // }
 import { createServerContext } from 'react';
 // 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 // import Image from 'next/image'
 // import Resume from '/Mihir_s_Resume.pdf';
 
@@ -102,6 +102,16 @@ export default function Home() {
       setCommand('');
     }
   };
+
+  // const commandInputRef = useRef(null); // Create a ref for the command input
+
+  // useEffect(() => {
+  //   // Automatically focus on the command input field when the component mounts
+  //   if (commandInputRef.current) {
+  //     commandInputRef.current.focus();
+  //   }
+  // }, []);
+
   const clear = () => {
     setCommandHistory([]); // Clear the command history
     setCommand('');
@@ -186,6 +196,7 @@ function Terminal({ onChange, onKeyDown, value }) {
         onKeyDown={onKeyDown}
         value={value}
         className="bg-[#30475E] text-white focus:outline-none"
+        autoFocus={true}
       /></h1>
   
     </div>
