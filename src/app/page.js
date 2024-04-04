@@ -410,6 +410,10 @@ function Contact() {
           <p className="font-fira">linkedin</p>
           <a href="https://linkedin.com/in/mihirseth" target='_blank' className="font-fira text-orange-500 underline">mihirseth</a>
         </div>
+        <div className="flex justify-between">
+          <p className="font-fira">ece webring</p>
+          <a href="https://ece.engineering" target='_blank' className="font-fira text-orange-500 underline">ece webring</a>
+        </div>
         {/* <div className="flex justify-between">
           <p className="font-fira">resume</p>
           <p className="font-fira">my resume</p>
