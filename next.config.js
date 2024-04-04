@@ -6,7 +6,4 @@ const nextConfig = {
 
 }
 
-module.exports = {
-    basePath: '/',
-    assetPrefix: '/',
-  };
+module.exports = nextConfig
