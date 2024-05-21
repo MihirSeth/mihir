@@ -157,7 +157,7 @@ export default function Home() {
     <div  className="bg-[#30475E] min-h-screen w-full h-full border-2 border-solid border-orange-500 pt-2">
       <header className="flex flex-col">
         <h1 className="font-fira pl-5"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> welcome</h1>
-        <pre className="flex overflow-hidden pl-5" >  
+        <pre className="flex overflow-hidden pl-5 test-xs" >  
 
           <code>{`
 ███╗   ███╗██╗██╗  ██╗██╗██████╗     ███████╗███████╗████████╗██╗  ██╗

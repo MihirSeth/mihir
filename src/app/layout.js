@@ -16,12 +16,21 @@ const fira = Fira_Code({
 export const metadata = {
   title: 'Mihir Seth',
   description: 'My Developer Portfolio',
+  icons: {
+    icon: "/public/favicon.ico",
+  },
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${fira.variable}`}>
-      <body className={fira.className} >{children}</body>
+      
+      <body className={fira.className} >
+        <link rel="icon" href="public/favicon.ico" sizes="any" />
+
+        {children}
+      
+      </body>
     </html>
   )
 }
