@@ -283,7 +283,7 @@ function Resume() {
 
   useEffect(() => {
     const openResumeInNewTab = () => {
-      window.open('https://drive.google.com/file/d/1KQ-uvn2_sLImzli1zIjhSl_DUEJu732y/view?usp=sharing', '_blank');
+      window.open('https://drive.google.com/file/d/1uuLVK4rf7bsYuJT26Muico50KBpGCdDb/view?usp=sharing', '_blank');
     };
 
     openResumeInNewTab(); // Open the PDF file when the component mounts
@@ -336,9 +336,10 @@ function Skills(){
       <h1 className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> skills</h1>
 
       <p className="font-fira">
-        <span className='font-bold'>languages:</span> JavaScript, Python, HTML/CSS, Dart, C/C++, Java
-        <br/><span className='font-bold'>frameworks: </span> React JS, Node JS Flutter, Redux, Flask
-        <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32 Libraries: NumPy, pytesseract, OpenCV
+        <span className='font-bold'>languages:</span> JavaScript, Python, HTML/CSS, Dart, C/C++, Ruby, Go
+        <br/><span className='font-bold'>frameworks: </span> React JS, Node JS, Flutter, Next JS, React, Flask, Django, Ruby on Rails
+        <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32
+        <br/><span className='font-bold'>libraries: </span> NumPy, OpenCV, PyTorch, Tailwind, Tensorflow, Pandas, YOLO, pytesseract, Docker, Rspec
       </p>
     </div>
   )
@@ -348,6 +349,12 @@ function Projects(){
   return(
     <div>
       <h1 className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> projects</h1>
+
+      <p className="font-fira">
+        <br/><span className='font-bold'>sous-chef - Python, JavaScript, Next JS, OpenCV, Flask, Pandas, Docker, PyTorch</span>
+        {/* <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32 Libraries: NumPy, pytesseract, OpenCV */}
+        <br /> Created a full stack website using Next JS that recommends recipes based on photos of ingredients taken by the user, enhancing convenience and reducing food waste.
+      </p>
 
       <p className="font-fira">
         <br/><span className='font-bold'>Sign Language Detection - PyTorch, Python, OpenCV, MediaPipe</span>
@@ -381,7 +388,9 @@ function Experience(){
     <div>
       <h1 className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> experience</h1>
       <p className="font-fira">
-        <br/><span className='font-bold'>Software Internship - DotPe</span>
+        <br/><span className='font-bold'>Software Development Engineer, Intern - Razorpay</span>
+        {/* <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32 Libraries: NumPy, pytesseract, OpenCV */}
+        <br /> Successfully increased unit test coverage from 15\% to 60\% on the payments application using Ruby, Rspec, and Ruby on Rails, significantly improving code reliability and quality. Utilized Ruby and Go to analyze and resolve frequent API errors, leading to a reduction of about 40\% in system alerts noise and improved monitoring efficiency. Developed comprehensive metrics for various aspects of the applications using Ruby and Ruby on Rails, and implementing them using Prometheus and Grafana, enabling detailed performance tracking and  issue resolution. Spearheaded the transition of exiting SMS and Email Services from external services like Gupshup to an internal service.
         {/* <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32 Libraries: NumPy, pytesseract, OpenCV */}
         <br /> Used image manipulation and OCR to authenticate and record the customers government identifier (passport, social security card, tax card etc.) while employing Python with specific tools like pytesseract, cv2, NumPy, among other tools
       </p>
