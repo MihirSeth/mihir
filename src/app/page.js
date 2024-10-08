@@ -283,7 +283,7 @@ function Resume() {
 
   useEffect(() => {
     const openResumeInNewTab = () => {
-      window.open('https://drive.google.com/file/d/1FTvLOM8KAU61GG1fbrBl2GF47Q8X9qZa/view?usp=sharing', '_blank');
+      window.open('https://drive.google.com/file/d/1PpPuyifjRw4CAUP5PzDDAHJnj_3l_g6V/view?usp=sharing', '_blank');
     };
 
     openResumeInNewTab(); // Open the PDF file when the component mounts
@@ -314,7 +314,7 @@ function About(){
       <h1 className="font-fira"><span className='text-orange-500'>visitor@mihirseth:$ ~</span> about</h1>
 
       <p className="font-fira">
-      My name is Mihir. I am 18 and an aspiring Computer Engineer.
+      My name is Mihir. I am 19 and an aspiring Computer Engineer.
       </p>
 
       <p className="font-fira pt-2">
@@ -323,7 +323,7 @@ function About(){
       </p>
       <p className="font-fira pt-2">
 
-        When not coding, you&apos;ll catch me either reading a book, watching a Sport, sleeping or crying over University Work. I occasionally also drift into endless thought while staring at the night sky.
+        When not coding, you&apos;ll catch me either reading a book, watching a sport, sleeping or crying over University Work. I occasionally also drift into endless thought while staring at the night sky.
       </p>
 
     </div>
