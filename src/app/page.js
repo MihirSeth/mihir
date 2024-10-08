@@ -392,6 +392,11 @@ function Experience(){
         {/* <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32 Libraries: NumPy, pytesseract, OpenCV */}
         <br /> Successfully increased unit test coverage from 15% to 60% on the payments application using Ruby, Rspec, and Ruby on Rails, significantly improving code reliability and quality. Utilized Ruby and Go to analyze and resolve frequent API errors, leading to a reduction of about 40\% in system alerts noise and improved monitoring efficiency. Developed comprehensive metrics for various aspects of the applications using Ruby and Ruby on Rails, and implementing them using Prometheus and Grafana, enabling detailed performance tracking and  issue resolution. Spearheaded the transition of exiting SMS and Email Services from external services like Gupshup to an internal service.
         {/* <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32 Libraries: NumPy, pytesseract, OpenCV */}
+      </p>
+      <p className="font-fira">
+        <br/><span className='font-bold'>Software Internship - Dotpe</span>
+        {/* <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32 Libraries: NumPy, pytesseract, OpenCV */}
+        {/* <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32 Libraries: NumPy, pytesseract, OpenCV */}
         <br /> Used image manipulation and OCR to authenticate and record the customers government identifier (passport, social security card, tax card etc.) while employing Python with specific tools like pytesseract, cv2, NumPy, among other tools
       </p>
 
