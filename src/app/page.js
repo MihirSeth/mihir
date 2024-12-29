@@ -283,7 +283,7 @@ function Resume() {
 
   useEffect(() => {
     const openResumeInNewTab = () => {
-      window.open('https://drive.google.com/file/d/1PpPuyifjRw4CAUP5PzDDAHJnj_3l_g6V/view?usp=sharing', '_blank');
+      window.open('https://drive.google.com/file/d/1E16y8CE88OXOyVolzOyUhIWK4pUn7hqP/view?usp=sharing', '_blank');
     };
 
     openResumeInNewTab(); // Open the PDF file when the component mounts
@@ -338,8 +338,8 @@ function Skills(){
       <p className="font-fira">
         <span className='font-bold'>languages:</span> JavaScript, Python, HTML/CSS, Dart, C/C++, Ruby
         <br/><span className='font-bold'>frameworks: </span> React JS, Node JS, Flutter, Next JS, React, Flask, Django, Ruby on Rails
-        <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32
-        <br/><span className='font-bold'>libraries: </span> NumPy, OpenCV, PyTorch, Tailwind, Tensorflow, Pandas, YOLO, pytesseract, Docker, Rspec, Langchain
+        <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Arduino, Raspberry Pi, STM 32
+        <br/><span className='font-bold'>libraries: </span> NumPy, OpenCV, PyTorch, ROS2, Tailwind, Tensorflow, Pandas, YOLO, pytesseract, Docker, Rspec, Langchain
       </p>
     </div>
   )
