@@ -369,6 +369,12 @@ function Projects(){
       </p>
 
       <p className="font-fira">
+        <br/><span className='font-bold'>Autonomous Line-Following Robo -  ROS2, Python, OpenCV, Arduino </span>
+        {/* <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32 Libraries: NumPy, pytesseract, OpenCV */}
+        <br /> Developed a line-following robot leveraging ROS, Python, OpenCV, and Arduino for real-time path detection, inter-node communication, and fully autonomous navigation.
+      </p>
+
+      <p className="font-fira">
         <br/><span className='font-bold'>MediRemi - Flutter, Dart, Firebase</span>
         {/* <br/><span className='font-bold'>developer tools: </span> Git, VS Code, Android Studio, Firebase/Firestore, Raspberry Pi, STM 32 Libraries: NumPy, pytesseract, OpenCV */}
         <br /> I designed a healthcare app aimed at providing users with timely reminders for medications and doctor appointments. Employing Flutter for the frontend and Firebase for the backend, I developed a comprehensive mobile application. The app seamlessly delivers periodic reminders, enhancing user adherence to healthcare routines. Additionally, I successfully published the app on the Google Play Store, making it readily accessible to a wide audience and contributing to improved health management for users.
